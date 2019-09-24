@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Java Script </title>
+<script>
+function add(){
+var a = 10;
+var b = 20;
+var c = a + b;
+document.getElementById("demo").innerHTML = c;
+}
+</script>
+<script>
+function add2(){
+var a, b, c;
+a = Number(document.getElementById("first").value);
+b = Number(document.getElementById("second").value);
+c = a + b;
+document.getElementById("answer").innerHTML = c;
+}
+</script>
+</head>
+<body>
+<button onclick="add()">Add 10 and 20</button>
+<p id="demo"></p><hr><br>
+Enter the First Number: <input id="first"><br><br>
+Enter the Second Number: <input id="second"><br><br>
+<button onclick="add2()">Add</button>
+<p id="answer"></p><br><br>
+
+</body>
+</html>
